@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
   });
   const verifyData = await verifyRes.json();
 
-  // Log for debugging
+  // Log for debugging paystack
   console.log("Paystack verify response:", verifyData);
 
   if (verifyData.status && verifyData.data) {
