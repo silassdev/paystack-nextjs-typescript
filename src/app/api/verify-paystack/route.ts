@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
   console.log("Paystack verify response:", verifyData);
 
   if (verifyData.status && verifyData.data) {
-    const status = verifyData.data.status; // "success", "pending", "failed"
+    const status = verifyData.data.status;
     return NextResponse.json({ status });
   } else {
     return NextResponse.json({ status: "failed", error: verifyData.message || "Verification error" }, { status: 400 });
