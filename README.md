@@ -1,5 +1,4 @@
-# Paystack Demo (Next.js)
-
+# Paystack Demo
 A simple demo on how to accept payments with Paystack in a Next.js app, verify transactions server-side, and show real-time payment status to users with flash messages.
 
 ---
